@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { TrooperService } from '../trooper.service';
+import { Recruit } from './recruit.model';
 
 
 @Component({
@@ -10,6 +11,7 @@ import { TrooperService } from '../trooper.service';
 export class ImageCreatorComponent implements OnInit {
 
 
+currentTrooper: Recruit
 
   constructor(public trooperService: TrooperService) {   }
 

@@ -1,6 +1,7 @@
-  <button class="recruitbutton" (click)="trooperService.displayImage()" >recruit</button>
-<img [src]="trooperService.troopers[trooperService.stormTrooper]">
-  <hr>
+  <button class="recruitbutton" (click)="currentTrooper = trooperService.nextTrooper()" >recruit</button>
+    <h1>{{currentTrooper.name}}</h1>
+    <h2>{{currentTrooper.skillsets}}</h2>
+  <img [src]="currentTrooper.imagePath">
 
 
 
