@@ -1,8 +1,9 @@
-  <button class="recruitbutton" (click)="currentTrooper = trooperService.nextTrooper()" >recruit</button>
+
+<button routerLink="/enlistTrooper" >enlist</button>
+<button class="recruitbutton" (click)="currentTrooper = trooperService.nextTrooper()" >recruit</button>
     <h1>{{currentTrooper.name}}</h1>
     <h2>{{currentTrooper.skillsets}}</h2>
   <img [src]="currentTrooper.imagePath">
-
 
 
 

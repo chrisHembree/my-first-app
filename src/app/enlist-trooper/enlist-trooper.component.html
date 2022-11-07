@@ -1,0 +1,25 @@
+<div>
+  <form (ngSubmit)="onEnlist(f)" #f="ngForm">
+    <label for="name">Name: </label>
+    <input id="name"
+    type="text"
+    name="name"
+    ngModel />
+    <label for="skillsets"> skillsets</label>
+    <input id = "skillsets"
+    type="text"
+    name="skillsets"
+    ngModel />
+    <label for="imagePath">URL: </label>
+    <input id = "imagePath"
+    type="text"
+    name="imagePath"
+    ngModel />
+    <button type="submit">Submit</button>
+  </form>
+</div>
+
+<button routerLink="/imageCreator">Home</button>
+
+
+

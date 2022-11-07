@@ -1,7 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 body {
-  background-color: rgb(118, 114, 114);
+  background-image: url("https://media.moddb.com/images/members/1/214/213414/Hangar1_JM.jpg")
 }
 h1 {
   color: white
 }
+
+/* https://media.moddb.com/images/members/1/214/213414/Hangar1_JM.jpg */
+
+

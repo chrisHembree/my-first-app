@@ -9,7 +9,7 @@ export class TrooperService {
 
   private blankTrooper: Recruit = new Recruit('', '', '');
 
-  private troopers : Recruit[] = [
+  public troopers : Recruit[] = [
     {
       imagePath:
         'https://cdn.shoplightspeed.com/shops/609450/files/10242899/image.jpg',
