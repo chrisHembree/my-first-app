@@ -11,7 +11,7 @@ import { HttpClient } from '@angular/common/http';
 export class EnlistTrooperComponent implements OnInit {
   constructor(
     private trooperService: TrooperService,
-    private http: HttpClient
+    public http: HttpClient
   ) {}
 
   ngOnInit(): void {}
@@ -24,16 +24,15 @@ export class EnlistTrooperComponent implements OnInit {
     const postTrooper = {
       name: trooperName,
       skillsets: trooperSkillsets,
-      imagepath: trooperUrl,
+      imagePath: trooperUrl,
     };
+
 
     this.http
       .post(
-        'https://trooer-8e20e-default-rtdb.firebaseio.com/enlisted-troopers',
+        'https://trooper-8e20e-default-rtdb.firebaseio.com/enlisted-trooper.json',
         postTrooper
-      )
-
-      .subscribe();
+      ).subscribe();
 
     this.trooperService.troopers.push(form.value);
   }

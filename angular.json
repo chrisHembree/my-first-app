@@ -94,6 +94,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "my-own-app:build:production",
+            "firebaseProject": "trooper-8e20e",
+            "firebaseHostingSite": "trooper-8e20e"
+          }
         }
       }
     }

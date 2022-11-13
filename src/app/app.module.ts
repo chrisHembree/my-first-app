@@ -7,6 +7,7 @@ import { EnlistTrooperComponent } from './enlist-trooper/enlist-trooper.componen
 import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { MyteamComponent } from './myteam/myteam.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { MyteamComponent } from './myteam/myteam.component';
   imports: [
     BrowserModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
 
   ],
   providers: [],

@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "trooper-8e20e": {
+      "hosting": {
+        "my-own-app": [
+          "trooper-8e20e"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "trooper-8e20e"
+  }
+}
