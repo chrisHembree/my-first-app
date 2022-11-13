@@ -6,12 +6,14 @@ import { ImageCreatorComponent } from './image-creator/image-creator.component';
 import { EnlistTrooperComponent } from './enlist-trooper/enlist-trooper.component';
 import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
+import { MyteamComponent } from './myteam/myteam.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ImageCreatorComponent,
     EnlistTrooperComponent,
+    MyteamComponent,
   ],
   imports: [
     BrowserModule,

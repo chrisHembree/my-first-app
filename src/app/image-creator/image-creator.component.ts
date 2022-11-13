@@ -8,7 +8,7 @@ import { Recruit } from './recruit.model';
   styleUrls: ['./image-creator.component.css'],
 })
 export class ImageCreatorComponent implements OnInit {
-  currentTrooper: Recruit = new Recruit("", "","");
+  currentTrooper: Recruit = new Recruit("","","");
 
   constructor(public trooperService: TrooperService) {}
 

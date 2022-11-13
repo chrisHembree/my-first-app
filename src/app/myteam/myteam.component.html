@@ -1,0 +1,7 @@
+<button routerLink="/imageCreator">Home</button>
+
+<div id="myTeamContainer" *ngFor="let myRecruit of trooperService.myTroopers" >
+<h1>{{myRecruit.name}}</h1>
+<h2>{{myRecruit.skillsets}}</h2>
+<img [src]="myRecruit.imagePath">
+</div>

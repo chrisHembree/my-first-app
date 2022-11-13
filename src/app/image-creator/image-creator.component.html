@@ -1,9 +1,9 @@
 
+
 <button routerLink="/enlistTrooper" >enlist</button>
+<button routerLink="/myteam">team</button>
 <button class="recruitbutton" (click)="currentTrooper = trooperService.nextTrooper()" >recruit</button>
-    <h1>{{currentTrooper.name}}</h1>
-    <h2>{{currentTrooper.skillsets}}</h2>
-  <img [src]="currentTrooper.imagePath">
-
-
+    <h1 *ngIf="currentTrooper" >{{currentTrooper.name}}</h1>
+    <h2 *ngIf="currentTrooper">{{currentTrooper.skillsets}}</h2>
+  <img *ngIf="currentTrooper" [src]="currentTrooper.imagePath" (click)= trooperService.selectTrooper(currentTrooper)>
 

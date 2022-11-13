@@ -8,5 +8,7 @@ export class Recruit {
     this.imagePath = imagePath;
     this.name = name;
     this.skillsets = skillsets
+
+
   }
 }

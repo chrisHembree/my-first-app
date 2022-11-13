@@ -4,6 +4,7 @@ import { Recruit } from './image-creator/recruit.model';
 @Injectable({
   providedIn: 'root',
 })
+
 export class TrooperService {
   constructor() {}
 
@@ -46,7 +47,7 @@ export class TrooperService {
     },
 
     {
-      imagePath: 'https://www.bing.com/images/blob?bcid=SFwIskXbIb4EzA',
+      imagePath: 'https://th.bing.com/th/id/R.47033892a237607c184493f74faffcd4?rik=tr7pOf2WhBvY9w&pid=ImgRaw&r=0',
       name: 'Death Trooper',
       skillsets: 'Executive Neutralization',
     },
@@ -86,6 +87,26 @@ export class TrooperService {
     }
     return Strooper;
   }
+
+
+  myRecruit : Recruit
+
+  myTroopers : Recruit[] = []
+
+
+
+  selectTrooper(currentTrooper: Recruit) {
+    this.myTroopers.push(currentTrooper)
+    this.troopers = this.troopers.filter(x => x!==currentTrooper)
+    this.stormTrooper=0
+    console.log (currentTrooper)
+
+
+  }
+
+
+
 }
+
 
 
