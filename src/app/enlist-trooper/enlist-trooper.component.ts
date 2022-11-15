@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { TrooperService } from '../trooper.service';
 import { HttpClient } from '@angular/common/http';
+import { Recruit } from '../image-creator/recruit.model';
+import { map } from 'rxjs/operators';
 
 @Component({
   selector: 'app-enlist-trooper',
@@ -35,5 +37,8 @@ export class EnlistTrooperComponent implements OnInit {
       ).subscribe();
 
     this.trooperService.troopers.push(form.value);
-  }
+
+
+    }
+
 }
